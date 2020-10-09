@@ -1,0 +1,35 @@
+.container {
+    padding: 3%;
+    height: 600px;
+    width: 600px;
+    background-color: #eee;
+    border: dashed 1px red; 
+    display: block;
+    margin: auto;
+    position: inherit;        
+}
+
+.box {
+    height: 75px;
+    width: 75px;
+    background-color: #eee;
+    border: dashed 1px red; 
+    position: relative;
+    animation-name: move;
+    animation-duration: 10s; 
+    /* animation-delay: 1s; */
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;    
+}
+
+@keyframes move {
+    0% {left: 0px;}
+    20% {left: 500px; top: 0px;}
+    30% {top: 100px; right: 0px;}
+    50% {right: 200px; transform: rotate(0deg);}
+    70% {transform: rotate(45deg); right: 200px;}
+    80% {border: dashed 1px blue;}
+
+}
